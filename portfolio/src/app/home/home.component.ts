@@ -1,12 +1,16 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css'],  // Corrected to styleUrls
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  imports: [FormsModule, CommonModule]
 })
-export class HomeComponent {
 
+export class HomeComponent {
+  
 }

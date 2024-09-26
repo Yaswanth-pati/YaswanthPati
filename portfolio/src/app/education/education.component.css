@@ -1,0 +1,22 @@
+.education-section {
+  padding: 100px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.education-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.education-list {
+  list-style: none;
+  padding: 0;
+}
+
+.education-list li {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #555;
+}
