@@ -1,0 +1,22 @@
+.experience-section {
+  padding: 100px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.experience-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.experience-list {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-list li {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #555;
+}

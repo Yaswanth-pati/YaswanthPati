@@ -1,0 +1,21 @@
+.section {
+    padding: 100px 20px;
+    background-color: #e9ecef;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .skills-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  

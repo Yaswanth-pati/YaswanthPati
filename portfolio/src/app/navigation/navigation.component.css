@@ -1,0 +1,84 @@
+/* Style the sidebar */
+.sidebar {
+  position: fixed;
+  top: 5%;
+  left: 0;
+  height: 90vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Evenly distribute the icons */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 1000;
+  padding: 0px 25px;
+  cursor: pointer;
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 100%; /* Take full height for the icon container */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space icons evenly */
+}
+
+.sidebar ul li {
+  margin: 10px 0; /* Ensure even spacing between icons */
+}
+
+.sidebar ul li a {
+  display: flex;
+  justify-content: center; /* Center icons horizontally */
+  align-items: center; /* Center icons vertically */
+  width: 50px; /* Initial width of icons */
+  height: 50px;
+  background-color: #f0f0f0;
+  border-radius: 50%; /* Ensure the circular shape */
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  transition: width 0.3s ease, background-color 0.3s ease, padding-left 0.3s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.sidebar ul li a:hover {
+  width: auto; /* Automatically adjust the width to fit the label */
+  padding-right: 15px; /* Add right padding to ensure text fits well */
+  background-color: #0056b3; /* Darker blue on hover */
+  color: white;
+  padding-left: 20px;
+  border-radius: 30px;
+}
+
+.sidebar ul li a i {
+  margin-right: 10px;
+}
+
+.sidebar ul li a span {
+  display: none;
+  opacity: 0;
+  margin-left: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar ul li a:hover span {
+  display: inline-block;
+  opacity: 1;
+}
+
+.sidebar ul li a.active {
+  background-color: #0056b3;
+  color: white;
+}
+
+.sidebar ul li a.active span,
+.sidebar ul li a.active i {
+  color: white;
+}
